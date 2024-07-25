@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopify</h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search by Product Name, Title, or Vendor">
+            <button id="searchButton">Search</button>
+            <button id="cartButton">🛒(0)</button>
+        </div>
+        <div class="buttons">
+            <button onclick="filterProducts('Men')">Men</button>
+            <button onclick="filterProducts('Women')">Women</button>
+            <button onclick="filterProducts('Kids')">Kids</button>
+            <button onclick="fetchProducts('ShowAll')">Show All</button>
+        </div>
+        <div id="productsContainer"></div>
+    </div>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
